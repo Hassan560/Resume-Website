@@ -1,0 +1,41 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #125a7c;
+  color: white;
+  padding: 10px !important;
+}
+.drawer {
+  display: none;
+}
+.MuiSvgIcon-root {
+  color: white;
+  font-size: 30px;
+}
+.header > .header__right > a {
+  color: white;
+  text-decoration: none;
+}
+.header > .header__left > a {
+  padding: 0px 20px;
+  color: white;
+  text-decoration: none;
+}
+@media screen and (max-width: 570px) {
+  .drawer {
+    flex: 0.5;
+    display: block;
+  }
+  .header {
+    justify-content: start;
+    padding: 0;
+  }
+  .header > .header__left {
+    display: none;
+  }
+}

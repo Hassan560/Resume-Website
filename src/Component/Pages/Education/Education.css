@@ -1,0 +1,67 @@
+.Education {
+  flex: 1;
+  padding: 10px;
+  background-color: white;
+  box-shadow: -1px 2px 10px #dedede;
+}
+.Education > h2 {
+  background-color: #125a7c;
+  color: white;
+  padding: 5px 5px;
+}
+.Education__body {
+  display: flex;
+  flex-wrap: wrap;
+  height: 90%;
+  padding: 20px 10px;
+  gap: 10px;
+}
+.Education__body > P {
+  padding-top: 20px;
+  width: 87px;
+  height: 0px;
+  text-align: justify;
+}
+.Education__rightOne {
+  width: 84%;
+  padding-top: 10px;
+}
+/* Media Query */
+@media screen and (max-width: 1230px) {
+  .Education__rightOne{
+    width: 75%;
+  }
+}
+@media screen and (max-width: 1040px) {
+  .Education__rightOne{
+    width: 65%;
+  }
+}
+@media screen and (max-width: 874px) {
+  .Education__rightOne{
+    width: 55;
+  }
+}
+
+@media screen and (max-width: 867px) {
+  .Education__body{
+  display: block;
+  }
+  .Education__body > p{
+    height: 30px;
+    padding-top: 10px;
+    display: block;
+  }
+  .Education__rightOne {
+    width: 100%;
+  }
+  .Education__rightOne > p{
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 826px) {
+  .Education{
+    margin: 25px;
+  }
+}
